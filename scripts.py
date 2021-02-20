@@ -1,0 +1,14 @@
+import sys
+import subprocess
+
+
+# with open('parrot.pkl', 'rb') as f:
+#     list = pickle.load(f)
+
+
+list = ['absl-py==0.8.1', 'altgraph==0.17', 'asgiref==3.2.10', 'astor==0.8.0', 'astroid==2.3.3', 'attrs==19.3.0', 'backcall==0.1.0', 'bleach==3.1.1', 'cachetools==3.1.1', 'certifi==2019.11.28', 'chardet==3.0.4', 'claptcha==0.3.3', 'cloudpickle==1.2.2', 'colorama==0.4.1', 'cycler==0.10.0', 'decorator==4.4.2', 'defusedxml==0.6.0', 'django==3.1', 'elapsedtimer==0.4', 'entrypoints==0.3', 'fire==0.2.1', 'future==0.18.2', 'gast==0.2.2', 'google-auth-oauthlib==0.4.1', 'google-auth==1.7.1', 'google-pasta==0.1.8', 'graphviz==0.13.2', 'grpcio==1.25.0', 'gym==0.15.4', 'h5py==2.10.0', 'idna==2.8', 'imageio==2.8.0', 'importlib-metadata==1.5.0', 'imutils==0.5.3', 'ipykernel==5.1.4', 'ipython-genutils==0.2.0', 'ipython==7.13.0', 'isort==4.3.21', 'jedi==0.16.0', 'jinja2==2.11.1', 'joblib==0.14.1', 'json5==0.9.2', 'jsonschema==3.2.0', 'jupyter-client==6.0.0', 'jupyter-core==4.6.3', 'jupyterlab-server==1.0.7', 'jupyterlab==2.0.1', 'keras-applications==1.0.8', 'keras-preprocessing==1.1.0', 'keras==2.2.5', 'kiwisolver==1.1.0', 'lazy-object-proxy==1.4.3', 'markdown==3.1.1', 'markupsafe==1.1.1', 'matplotlib==3.1.2', 'mccabe==0.6.1', 'mistune==0.8.4', 'nbconvert==5.6.1', 'nbformat==5.0.4', 'notebook==6.0.3', 'numpy==1.17.4', 'oauthlib==3.1.0', 'opencv-contrib-python==4.2.0.34', 'opencv-python==4.1.2.30', 'opt-einsum==3.1.0', 'pandas==0.25.3', 'pandocfilters==1.4.2', 'parso==0.6.2', 'pefile==2019.4.18', 'pickleshare==0.7.5', 'pillow==6.2.1', 'pip==20.1.1', 'pipenv==2018.11.26', 'prometheus-client==0.7.1', 'prompt-toolkit==3.0.3', 'protobuf==3.13.0', 'pyasn1-modules==0.2.7', 'pyasn1==0.4.8', 'pydot-ng==2.0.0', 'pydot==1.4.1', 'pygame==1.9.6', 'pyglet==1.3.2', 'pygments==2.6.1', 'pyinstaller==3.6', 'pylint==2.4.4', 'pyparsing==2.4.5', 'pyrsistent==0.15.7', 'python-dateutil==2.8.1', 'pytz==2019.3', 'pywin32-ctypes==0.2.0', 'pywin32==227', 'pywinpty==0.5.7', 'pyyaml==5.1.2', 'pyzmq==19.0.0', 'requests-oauthlib==1.3.0', 'requests==2.22.0', 'rsa==4.0', 'scikit-learn==0.22.1', 'scipy==1.3.3', 'seaborn==0.10.1', 'send2trash==1.5.0', 'setuptools==42.0.2', 'six==1.13.0', 'sklearn==0.0', 'sqlparse==0.3.1', 'tensorboard==1.14.0', 'tensorflow-estimator==1.14.0', 'tensorflow==1.14.0', 'termcolor==1.1.0', 'terminado==0.8.3', 'testpath==0.4.4', 'tornado==6.0.4', 'traitlets==4.3.3', 'typed-ast==1.4.0', 'urllib3==1.25.7', 'virtualenv-clone==0.5.3', 'virtualenv==16.7.9', 'wcwidth==0.1.8', 'webencodings==0.5.1', 'werkzeug==0.16.0', 'wheel==0.33.6', 'wrapt==1.11.2', 'zipp==3.1.0']
+# implement pip as a subprocess:
+for i in list:
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+    i])
+    
