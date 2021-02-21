@@ -44,7 +44,7 @@ def regionGrow(img,seeds,thresh,p = 1):
                 seedMark[Xt,YT] = label
                 seedList.append(Point(Xt,YT))
     return seedMark
-img = np.array(Image.open("exemple2.jpg").convert("L"))
+img = np.array(Image.open("images/exemple0.png").convert("L"))
 
 seeds = [Point(100,100),Point(200,500), Point(450,450), Point(0,0)]
 #modifier

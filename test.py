@@ -46,7 +46,7 @@ def regionGrow(img,seeds,thresh,p = 1):
     return seedMark
 img = np.array(Image.open("B+.png").convert("L"))
 
-seeds = [Point(0,0), Point(150,78)]
+seeds = [Point(0,0), Point(130 ,66)]
 #modifier
  
 Img = regionGrow(img,seeds,thresh=10, p=1)
